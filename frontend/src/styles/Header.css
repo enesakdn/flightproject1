@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.plane-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.plane-icon-container h2 {
+  margin-left: 10px;
+}
+
+.plane-icon {
+  width: 40px;
+  height: auto;
+}
+
+.user-icon {
+  width: 30px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.header-s {
+  display: flex;
+  gap: 20px; /* Space between Deals and Discover */
+  align-items: center;
+}
+
+.header-s div {
+  display: flex;
+  align-items: center; /* Aligns icon and text vertically */
+  gap: 5px; /* Space between icon and text */
+}
+
+.user {
+  display: flex;
+  align-items: center; /* Aligns user icon and name vertically */
+}
+
+.header-a {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Adds space between Deals/Discover and User */
+}
+.user a {
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+  color: inherit;
+}
+
+.user a:hover {
+  cursor: pointer; /* Üzerine gelindiğinde imleci değiştirme */
+}

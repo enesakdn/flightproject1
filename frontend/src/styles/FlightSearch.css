@@ -1,0 +1,137 @@
+.flight-search {
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.fs-t {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon-title {
+  display: flex;
+  align-items: center;
+  margin-left: 1%;
+  font-size: 0.75rem; /* Daha küçük yazı boyutu */
+}
+
+.icon-title svg {
+  margin-right: 10px; /* İkon ile başlık arasında boşluk */
+}
+
+.fs-t h2 {
+  color: #515151;
+}
+.fs-t button {
+  padding: 15px;
+}
+.round-trip-toggle {
+  display: flex;
+  margin: 10px;
+}
+
+.left-button,
+.right-button {
+  padding: 10px 20px; /* Yatayda daha fazla boşluk */
+  height: 40px; /* Daha kısa yükseklik */
+  font-size: 14px; /* Yazı boyutunu ayarla */
+  font-weight: 520; /* Yazı kalınlığını artır */
+  color: #4a0097;
+  background-color: #e6e0f8;
+}
+.left-button {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border: none;
+}
+
+.right-button {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: none;
+}
+/* Active button styles (background navy blue, text white) */
+.left-button.active,
+.right-button.active {
+  background-color: #4a0097; /* Lacivert arka plan */
+  color: white; /* Beyaz yazı */
+}
+
+/* Button hover effect */
+.left-button:hover,
+.right-button:hover {
+  cursor: pointer; /* Mouse el işareti */
+}
+
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  background-color: white;
+  border-radius: 30px;
+}
+.input-container-left,
+.input-container-right {
+  position: relative;
+  flex-grow: 1;
+  width: auto; /* Make sure width is flexible */
+}
+
+.input-container-left {
+  margin-left: 8px;
+  margin-right: 2px;
+}
+
+.input-container-right {
+  margin-right: 8 px;
+  margin-left: 2px;
+}
+
+.input-container-left input,
+.input-container-right input {
+  width: 100%;
+  height: 40px; /* Reduced height */
+  padding: 0 10px 0 35px; /* Adjusted padding for smaller input size */
+  font-size: 12px; /* Reduced font size */
+  border: 2px solid #acb9b7;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.input-container-left input {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.input-container-right input {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.input-container-left svg,
+.input-container-right svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.airport-bar .date-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-button {
+  padding: 12px;
+  margin: 15px;
+  background-color: #4a0097;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-weight: 550;
+}

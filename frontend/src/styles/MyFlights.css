@@ -1,0 +1,78 @@
+/* MyFlights.css */
+
+.flight-container {
+  padding: 20px; /* Outer padding for the container */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  font-family: "Arial", sans-serif; /* Update font family */
+}
+
+.flight-details {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd; /* Add border */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s; /* Smooth shadow transition */
+}
+
+.flight-details:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.flight-thumbnail {
+  width: 60px; /* Set width for the image */
+  height: 60px; /* Set height for the image */
+  border-radius: 50%; /* Make the image circular */
+  margin-right: 15px; /* Space between image and text */
+}
+
+.flight-description {
+  flex: 1; /* Take up remaining space */
+}
+
+.flight-description h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #4a0097;
+}
+
+.flight-description p {
+  margin: 5px 0;
+  color: #666;
+}
+
+/* New styles for airport info */
+.airport-info {
+  font-size: 20px; /* Increase font size */
+  font-weight: bold; /* Make text bold */
+  color: #4a0097; /* Optional: color for consistency */
+}
+
+.return-button {
+  display: inline-block; /* Ensure it behaves like a block for padding */
+  margin-top: 20px; /* Spacing above the button */
+  background-color: #4a0097; /* Button color */
+  color: white;
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-weight: bold; /* Bold text */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.return-button:hover {
+  background-color: #3a0077; /* Darker shade on hover */
+}

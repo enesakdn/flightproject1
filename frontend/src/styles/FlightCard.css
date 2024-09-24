@@ -1,0 +1,127 @@
+.flight-card {
+  background-color: white;
+  border-radius: 10px 10px 10px 0;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 30px 20px;
+  width: 75%;
+  opacity: 1;
+  transition: opacity 0.3s ease; /* Opacity geçişi */
+}
+
+.flight-info:hover .flight-card:nth-child(n + 3) {
+  opacity: 1; /* Scroll sırasında kartları tam görünür hale getir */
+}
+
+.flight-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.flight-route {
+  display: flex; /* Ensure items are in a flex container */
+  justify-content: space-between; /* Aligns items evenly */
+  margin: 0px 0; /* Adjust margin to bring items closer */
+  font-weight: bold;
+}
+
+.flight-route-item {
+  margin: 0; /* Remove margin */
+  padding: 0 5px; /* Add some padding for space */
+}
+
+.flight-times {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.flight-departure {
+  text-align: left;
+  flex: 1; /* Takes equal space */
+}
+
+.departure-text {
+  margin: 5px 0;
+}
+
+.arrival-text {
+  margin: 5px 0;
+}
+
+.flight-duration {
+  text-align: center;
+  flex: 1;
+  font-size: 16px;
+  color: #666;
+  font-weight: bold;
+}
+
+.flight-arrival {
+  text-align: right;
+  flex: 1; /* Takes equal space */
+}
+
+.flight-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  height: 90vh; /* Yüksekliği ekrana sabitle */
+  overflow-y: scroll; /* Dikey kaydırmayı etkinleştir */
+  scrollbar-width: none; /* Firefox'ta scrollbar gizle */
+  -ms-overflow-style: none; /* IE'de scrollbar gizle */
+}
+
+.flight-info::-webkit-scrollbar {
+  display: none; /* Chrome, Safari ve diğer WebKit tabanlı tarayıcılarda scrollbar gizle */
+}
+
+.flight-price {
+  color: #333;
+  font-weight: bold;
+}
+
+.book-flight-button-container {
+  display: flex; /* Ensure the button and link are in a flex container */
+  margin: -20px;
+  flex-direction: column; /* Stack button and link vertically */
+  margin-top: 10px; /* Adjust space above the button */
+}
+
+.book-flight-button {
+  background-color: #4a0ba2;
+  color: #fff;
+  border: none;
+  padding: 35px 55px; /* Adjust padding for better button size */
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 10px 0 10px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  align-self: flex-end; /* Align the button to the end of the container */
+}
+
+.flight-details-link {
+  position: absolute; /* Keep it absolutely positioned */
+  bottom: -50px; /* Maintain its original position */
+  left: 0; /* Align to the left */
+  color: #6200ea;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: #c2d7d5;
+  padding: 15px 25px;
+  border: 1px solid #ccc;
+  border-radius: 0 0 10px 10px;
+  text-decoration: underline;
+}
+.line {
+  border-top: 3px solid #9e9393; /* Light gray color for the line */
+  width: 80px; /* Adjust width as necessary */
+  margin: 0 10px; /* Add some horizontal spacing */
+  align-self: center; /* Center the line vertically in the flex container */
+}
